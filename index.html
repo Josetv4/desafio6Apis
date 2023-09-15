@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de monedas Jose Luque</title>
+    <!-- HOJA DE ESTILO PRINCIPAL -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- App conversor de monedas -->
+    <main class="app-currency-converter">
+      <h1 id="title">Conversor de monedas Nacional</h1>
+      <section id="app">
+        <div id="containerApp">
+          <label id="titleApp" for="pesos"
+            >Pesos Chilenos
+            <input
+              id="pesos"
+              type="number"
+              name="pesos"
+              placeholder="Ingrese el monto en CLP"
+          /></label>
+          <label for="most-like"
+            >Monedas a Convertir
+            <select id="destinationCurrency" required>
+              <option disabled selected value>selecciona una moneda</option>
+              <option value="dolar">Dolar</option>
+              <option value="euro">Euro</option>
+              <option value="bitcoin">BitCoin</option>
+            </select>
+          </label>
+          <button id="btnGetValor">Buscar</button>
+          <p id="result"></p>
+        </div>
+      </section>
+      <canvas id="graph"></canvas>
+    </main>
+    <!-- SCRIPT PRINCIPAL -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
